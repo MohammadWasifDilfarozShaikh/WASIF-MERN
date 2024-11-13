@@ -30,7 +30,6 @@ router.post(
         location: req.body.location,
       }).then(res.json({ success: true }));
     } catch (error) {
-      console.log(error);
       res.json({ success: false });
     }
   }
