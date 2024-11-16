@@ -7,7 +7,7 @@ mongoDB();
 
 app.use(cors(
     {
-        origin:[  " "  ],
+        origin:["https://wasifsk-mern-api.vercel.app"],
         methords: ["POST","GET"],
         credentials: true
     }
