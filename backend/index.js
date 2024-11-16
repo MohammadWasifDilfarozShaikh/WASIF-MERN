@@ -2,8 +2,16 @@ const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 5000;
 const mongoDB = require('./db')
-
+const cors = require('cors')
 mongoDB();
+
+app.use(cors(
+    {
+        origin:[  ],
+        methords: ["POST","GET"],
+        credentials: true
+    }
+))
 
 app.use((req,res,next)=>{
     res.setHeader("Access-Control-Allow-Origin","http://localhost:3000")
