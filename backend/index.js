@@ -7,7 +7,7 @@ mongoDB();
 
 app.use(cors(
     {
-        origin:[  ],
+        origin:[  " "  ],
         methords: ["POST","GET"],
         credentials: true
     }
